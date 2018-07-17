@@ -16,13 +16,16 @@ function middleware(app) {
                     ctx.body = `<?xml version="1.0" encoding="UTF-8"?>${json2xml({ root: ctx.body })}`;
                     ctx.set('content-type', 'application/xml');
                     break;
+                case 'csv':
+                    ctx.set('content-type', 'text/csv');
+                    break;
                 default:
                     break;
 
                 }
             }
         } catch (err) {
-            logger.error('Error formating', err);
+            logger.error('Error formatting', err);
         }
     });
 }

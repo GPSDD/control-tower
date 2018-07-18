@@ -50,13 +50,6 @@ module.exports = async function init() {
     }).save();
 
     await new Plugin({
-        name: 'stadistics',
-        description: 'Add stadistics info',
-        mainFile: 'ct-stadistics-plugin',
-        active: true,
-        cronFile: 'ct-stadistics-plugin/cron',
-    }).save();
-    await new Plugin({
         name: 'sessionMongo',
         description: 'Add session support with mongodb',
         mainFile: 'plugins/sessionMongo',
@@ -154,6 +147,13 @@ module.exports = async function init() {
         },
     }).save();
 
+    await new Plugin({
+        name: 'stadistics',
+        description: 'Add stadistics info',
+        mainFile: 'ct-stadistics-plugin',
+        active: true,
+        cronFile: 'ct-stadistics-plugin/cron',
+    }).save();
     await new Plugin({
         name: 'redisCache',
         description: 'Cache request',

@@ -51,7 +51,7 @@
     "cron": "^1.1.0",
     "ct-oauth-plugin": "1.6.21-data4sdgs",
     "ct-redis-cache-plugin": "1.2.3",
-    "ct-stadistics-plugin": "1.4.1-data4sdgs",
+    "ct-stadistics-plugin": "1.4.2-data4sdgs",
     "dockerode": "^2.4.3",
     "dotenv": "^2.0.0",
     "fastly-purge": "1.0.1",

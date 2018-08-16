@@ -12,6 +12,7 @@ case "$1" in
         ;;
     startCron)
         echo "Running Start Dev"
+        node node_modules/geoip-lite/scripts/updatedb.js &
         exec node app/index-crons
         ;;
     test)

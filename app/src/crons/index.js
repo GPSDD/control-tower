@@ -13,8 +13,8 @@ async function onDbReady(err) {
     }
     // set promises in mongoose with bluebird
     mongoose.Promise = bluebird;
-    require('crons/live.cron'); // eslint-disable-line global-require
-    require('crons/error.cron'); // eslint-disable-line global-require
+    //require('crons/live.cron'); // eslint-disable-line global-require
+    //require('crons/error.cron'); // eslint-disable-line global-require
     // require('crons/consul.cron'); // eslint-disable-line global-require
     // require('crons/swarm.cron'); // eslint-disable-line global-require
     //

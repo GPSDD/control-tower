@@ -63,7 +63,7 @@ module.exports = async function init() {
     await new Plugin({
         name: 'oauth',
         description: 'Plugin oauth with passport',
-        mainFile: 'ct-oauth-plugin',
+        mainFile: 'ct-oauth-plugin-gpsdd',
         active: true,
         config: {
             defaultApp: 'gfw',

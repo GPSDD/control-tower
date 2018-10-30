@@ -21,6 +21,7 @@ async function loadPlugins(app) {
     plugins.forEach((plugin) => {
         try {
             logger.info(`Loading ${plugin.name} plugin`);
+            plugin.mainFile = plugin.mainFile === 'ct-oauth-plugin' ? 'ct-oauth-plugin-gpsdd' : plugin.mainFile;
             require(plugin.mainFile).middleware(app, plugin, generalConfig); // eslint-disable-line global-require
         } catch (e) {
             logger.error(e);
